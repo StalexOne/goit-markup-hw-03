@@ -16,8 +16,15 @@ body {
 
     font-family: Roboto, sans-serif;
 }
-h1, h2, h3, h4, h5,h6, p, {
-    margin: 0;
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+margin: 0;
 }
 
 ul, ol {
@@ -43,6 +50,7 @@ button {
 }
 
 .container {
+    /* display: flex; */
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -72,10 +80,6 @@ button {
     margin: 0;}
 
 
-  /* CONTAINER HEADER */
-.main-nav {
-display: flex;
-align-items: center;}
 /* LOGO */
 .logo.link {
 display: flex;
@@ -111,6 +115,11 @@ margin-right: 76px;}
 
 
   /* HEADER */
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav-item {
     display: flex;
 }
@@ -239,14 +248,14 @@ padding: 188px 0;}
 .card .item+.item {
     margin-left: 24px;}
 .card.teams > .item {
-    flex-basis: calc(100% / 4 - 24px);
+    flex-basis: calc(100% / 3 - 24px);
 background-color: var(--back-main-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card.we-doing >.item {
-    flex-basis: calc(100% / 3 - 24px);}
+    flex-basis: calc(100% / 2 - 24px);}
 
 /* .card.we-doing {
     margin-bottom: 120px;} */
@@ -357,6 +366,6 @@ margin-top: 16px;
 .card-img {
     padding: 32px;
 }
-.type {
+/* .type {
     padding-top: 8px;
-}
+} */
